@@ -1,29 +1,23 @@
-<header class="site-header">
-
-  <div class="wrapper">
+<header>
 
 
-
-   <nav class="navbar navbar-inverse navbar-fixed-top">
-     <div class="navbar-inner">
-      <div class="container">
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-         </a>
-             
-        <div class="trigger">
-          <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-          {% for page in site.pages %}
-            {% if page.title %}
-            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-            {% endif %}
-          {% endfor %}
-        </div>
+  <div class="row">
+    <div class="col-md-6">
+      <ul class="nav nav-pills">
+        <li role="presentation" {%if page.id == 'index'%} class="active"{%endif%}><a href="{{ "/index.html" | prepend: site.baseurl }}"><span class="logo"><span class="blurry-text">Jasper Voss </span>Projects</span></a></li>
+        </ul>
+    </div>
+    <div class="col-md-5">
+      <ul class="nav nav-pills pull-right">
+       
+        <li role="presentation"{%if page.id == 'artists'%} class="active"{%endif%}><a href="{{ "/artist.html" | prepend: site.baseurl }}">Artists</a></li>
+        <li role="presentation"{%if page.id == 'exhibitions'%} class="active"{%endif%}><a href="{{ "/exhibitions.html" | prepend: site.baseurl }}">Exhibitions</a></li>
+        <li role="presentation"{%if page.id == 'about'%} class="active"{%endif%}><a href="{{ "/about.html" | prepend: site.baseurl }}">About</a></li>
+      </ul>
       </div>
-    </nav>
-
-  </div>
-
+      <div class="col-md-1">
+      </div>
+    </div>
+    <hr>
+  
 </header>
