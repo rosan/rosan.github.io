@@ -97,6 +97,11 @@ a:focus{
    text-shadow: 0 0 3px rgba(0,0,0,0.5);
 }
 
+.blurry-text h4{
+   color: transparent;
+   text-shadow: 0 0 0.8px rgba(0,0,0,0.5);
+}
+
 hr {
   margin-top: 5px;
   margin-bottom: 10px;
@@ -109,6 +114,10 @@ hr {
 
 .carousel-inner {
     height: 700px;
+}
+
+.carousel-inner a{
+    color: grey;
 }
 
 .carousel-inner .item {
