@@ -1,0 +1,12 @@
+# Site settings
+title: Jasper Voss Projects
+email: jaspervossprojects.com
+description: > # this means to ignore newlines until "baseurl:"
+  Jasper Voss Projecs representing emerging artistst in the UK.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://jaspervossprojects.com" # the base hostname & protocol for your site
+twitter_username: jaspervossprojects
+github_username:  jaspervoss
+
+# Build settings
+markdown: kramdown

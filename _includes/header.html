@@ -1,0 +1,23 @@
+<header>
+
+
+  <div class="row">
+    <div class="col-md-6">
+      <ul class="nav nav-pills">
+        <li role="presentation" {%if page.id == 'index'%} class="active"{%endif%}><a href="{{ "/index.html" | prepend: site.baseurl }}"><span class="logo"><span class="blurry-text">Jasper Voss </span>Projects</span></a></li>
+        </ul>
+    </div>
+    <div class="col-md-5">
+      <ul class="nav nav-pills pull-right">
+       
+        <li role="presentation"{%if page.id == 'artists'%} class="active"{%endif%}><a href="{{ "/artist.html" | prepend: site.baseurl }}">Artists</a></li>
+        <li role="presentation"{%if page.id == 'exhibitions'%} class="active"{%endif%}><a href="{{ "/exhibitions.html" | prepend: site.baseurl }}">Exhibitions</a></li>
+        <li role="presentation"{%if page.id == 'about'%} class="active"{%endif%}><a href="{{ "/about.html" | prepend: site.baseurl }}">About</a></li>
+      </ul>
+      </div>
+      <div class="col-md-1">
+      </div>
+    </div>
+    <hr>
+  
+</header>
