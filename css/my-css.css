@@ -114,16 +114,15 @@ hr {
 }
 
 .carousel-inner {
-    height: 700px;
+    height: 500px;
 }
 
 .carousel-inner a{
     color: grey;
 }
 
+ 
 
-
-max-width: none;
 
 .main-image{
   padding-top: 30px;
