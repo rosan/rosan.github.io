@@ -24,6 +24,8 @@ body {
   padding-right: 60px;
 }
 
+
+
 .carousel-control.left{
   
   background-image: none;
@@ -34,8 +36,44 @@ body {
   background-image: none;
 }
 
+.carousel-control {
+  position:relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 15px;
+  color: black;
+  text-align: left;
+  text-shadow: none;
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+
+.control-container{
+ position: absolute; 
+ left: 0px;
+ top: 0px;
+ 
+ 
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+  color: black;
+
+}
+
 .carousel-caption{
   padding-bottom: 0px;
+  position: relative;
+  left: auto;
+  right: auto;
+  color: black;
+  
+  text-shadow: none;
+  font-size: 80%;
+  margin: auto;
 
 }
 
@@ -66,8 +104,8 @@ a:focus{
 }
 
 .nav-pills>li>a{
- 
-  font-size: 20px;
+  padding-bottom: 0px;
+  font-size: 15px;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active{
@@ -103,6 +141,14 @@ a:focus{
    text-shadow: 0 0 0.8px rgba(0,0,0,0.5);
 }
 
+.h3, h3 {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+
+
+
 hr {
   margin-top: 5px;
   margin-bottom: 10px;
@@ -110,19 +156,27 @@ hr {
 }
 
 .logo{
-  font-size: 25px;
+  font-size: 20px;
 }
 
-.carousel-inner {
-    height: 500px;
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+
+  display:block;
+  max-height: 600px; !important
+   
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+  margin: auto;
 }
 
 .carousel-inner a{
     color: grey;
 }
 
- 
-
+ .carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right{
+  margin-top: 25px;
+ }  
 
 .main-image{
   padding-top: 30px;
@@ -132,3 +186,8 @@ hr {
 small {
   font-size: 90%;
 }
+
+
+
+
+
