@@ -2,7 +2,7 @@
 title: Jasper Voss Projects
 email: jaspervossprojects.com
 description: > # this means to ignore newlines until "baseurl:"
-  Jasper Voss Projecs representing emerging artistst in the UK.
+  Jasper Voss Projects presents an itinerant programme of exhibitions featuring emerging artists.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://jaspervossprojects.com" # the base hostname & protocol for your site
 twitter_username: jaspervossprojects
