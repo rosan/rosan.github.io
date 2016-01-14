@@ -11,6 +11,13 @@
         <link rel="stylesheet" href="{{ "/css/my-css.css" | prepend: site.baseurl }}">
         <script src="{{ "/bootstrap-3.3.4-dist/js/jquery-1.11.3.min.js" | prepend: site.baseurl }}"type="text/javascript"></script>
         <script src="{{ "/bootstrap-3.3.4-dist/js/bootstrap.js" | prepend: site.baseurl }}"type="text/javascript"></script>
+        <script>
+        $(function(){
+          $('.carousel').on('slid.bs.carousel', function() {
+            $('.vimeo-embed').each(function(i, e){e.contentWindow.postMessage('{"method": "pause"}', '*')});
+          });
+        });
+       </script>   
         
         
 
